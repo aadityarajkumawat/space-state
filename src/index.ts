@@ -20,7 +20,7 @@ function subscribeToStore<T>(initialState: T): number {
     return stateHash;
 }
 
-export const stateTools = {
+const stateTools = {
     createState: function <T>(initialState: T) {
         const newState = new State<T>(initialState);
         const stateHash = subscribeToStore(initialState);
@@ -44,3 +44,5 @@ export const stateTools = {
         return { getStateValue, updateState };
     },
 };
+
+export const { createState } = stateTools;
