@@ -1,0 +1,23 @@
+{
+    "name": "space-state",
+    "version": "1.0.0",
+    "description": "A internal tool to manage state type stuff in javascript",
+    "main": "index.js",
+    "scripts": {
+        "watch": "tsc -w",
+        "build": "tsc",
+        "start": "nodemon dist/index.js",
+        "run": "node dist/index.js"
+    },
+    "keywords": [
+        "javascript",
+        "typescript"
+    ],
+    "author": "Aditya Raj Kumawat",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^15.3.1",
+        "nodemon": "^2.0.7",
+        "typescript": "^4.2.4"
+    }
+}
