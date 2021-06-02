@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+space-state@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/space-state/-/space-state-1.0.2.tgz#71d288670e76744e30f8951bfd7369989641b8b8"
+  integrity sha512-SK0gny5GeoymU/knUAeomHoc5OKG71A8q4fsfa/uv9UCRUPnX1Gjw4TCL8TbZtHykfeeQsHBZngHPfc1v3I1fA==
+  dependencies:
+    uuid "^8.3.2"
+
 uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
