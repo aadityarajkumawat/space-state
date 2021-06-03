@@ -1,6 +1,6 @@
 {
     "name": "space-state",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A internal tool to manage state type stuff in javascript",
     "main": "./src/index.js",
     "type": "module",
