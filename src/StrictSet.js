@@ -1,4 +1,4 @@
-export function StrictSet(initialSet = {}) {
+function StrictSet(initialSet = {}) {
     let states = initialSet;
 
     const strictSetAPI = {
@@ -25,3 +25,5 @@ export function StrictSet(initialSet = {}) {
 
     return strictSetAPI;
 }
+
+module.exports = { StrictSet };

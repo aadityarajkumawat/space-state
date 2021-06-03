@@ -1,4 +1,4 @@
-import { StrictSet } from "./StrictSet.js";
+const { StrictSet } = require("./StrictSet");
 /**
  * The createStore function creates an instance of store that stores the state of
  * complete application, and returns some methods to make changes to app states
@@ -14,7 +14,7 @@ import { StrictSet } from "./StrictSet.js";
  *
  * @returns {object} storeAPI
  */
-export function createStore() {
+function createStore() {
     /**
      * What store would look like
      * in a typical JS application
@@ -48,3 +48,5 @@ export function createStore() {
 
     return storeAPI;
 }
+
+module.exports = { createStore };

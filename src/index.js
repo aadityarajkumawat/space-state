@@ -1,5 +1,5 @@
-import { createStore } from "./store.js";
-import { v4 as uid } from "uuid";
+const { createStore } = require("./store");
+const { v4: uid } = require("uuid");
 
 const store = createStore();
 
@@ -24,7 +24,7 @@ function initState(key, initialState) {
  * @param {object} initialState
  * @returns ````getState, setState````
  */
-export function createState(initialState) {
+function createState(initialState) {
     const key = uid();
     initState(key, initialState);
 
@@ -47,3 +47,5 @@ export function createState(initialState) {
 
     return stateAPI;
 }
+
+module.exports = { createState };
